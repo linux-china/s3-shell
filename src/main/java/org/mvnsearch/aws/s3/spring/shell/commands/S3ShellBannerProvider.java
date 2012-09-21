@@ -5,7 +5,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.shell.core.CommandMarker;
 import org.springframework.shell.core.annotation.CliCommand;
 import org.springframework.shell.plugin.support.DefaultBannerProvider;
-import org.springframework.shell.support.util.StringUtils;
+import org.springframework.shell.support.util.OsUtils;
 import org.springframework.stereotype.Component;
 
 /**
@@ -24,10 +24,10 @@ public class S3ShellBannerProvider extends DefaultBannerProvider implements Comm
     @SuppressWarnings("StringConcatenationInsideStringBufferAppend")
     public String getBanner() {
         StringBuilder buf = new StringBuilder();
-        buf.append("=======================================" + StringUtils.LINE_SEPARATOR);
-        buf.append("*                                     *" + StringUtils.LINE_SEPARATOR);
-        buf.append("*            AWS S3 Shell             *" + StringUtils.LINE_SEPARATOR);
-        buf.append("*                                     *" + StringUtils.LINE_SEPARATOR);
+        buf.append("=======================================" + OsUtils.LINE_SEPARATOR);
+        buf.append("*                                     *" + OsUtils.LINE_SEPARATOR);
+        buf.append("*            AWS S3 Shell             *" + OsUtils.LINE_SEPARATOR);
+        buf.append("*                                     *" + OsUtils.LINE_SEPARATOR);
         buf.append("=======================================");
         return buf.toString();
     }
