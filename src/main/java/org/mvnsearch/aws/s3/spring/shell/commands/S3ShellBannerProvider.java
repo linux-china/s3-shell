@@ -67,6 +67,6 @@ public class S3ShellBannerProvider extends DefaultBannerProvider implements Comm
      */
     @Override
     public String name() {
-        return "aliyun-oss-java-cli";
+        return "S3-Shell";
     }
 }
