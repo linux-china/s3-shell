@@ -31,7 +31,11 @@
             </roles>
         </developer>
     </developers>
-
+    <scm>
+        <connection>scm:git:https://github.com/linux-china/s3-shell.git</connection>
+        <developerConnection>scm:git:git@github.com:linux-china/s3-shell.git</developerConnection>
+        <url>https://github.com/linux-china/s3-shell</url>
+    </scm>
     <dependencies>
         <dependency>
             <groupId>com.intellij</groupId>
